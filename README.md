@@ -1,5 +1,5 @@
 # EmbeddedC_TI_SimpleLink
-The repository features aN embedded software project written in C that features the TI SimpleLink Wifi CC3220S wireless microcontroller LaunchPad Development Kit
+The repository features an embedded software project written in C that features the TI SimpleLink Wifi CC3220S wireless microcontroller LaunchPad Development Kit
 
 The project consisted of programming thermostat with 2 GPIO buttons for input, a temperature sensor, and one red LED used as a heat indicator. The project consisted of using I2C communication protocol for sending information from the temperature sensor to the microcontroller, using UART communication to send information from the device to an external server via USB port, and a timer to poll all of the programmed tasks. The objective of the program was to implement a task scheduler to check each button every 200 ms, read the room temperature every 500 ms, and update the LED when certain conditions were met. The buttons controlled the temperature setpoint. The right button increased the setpoint, and the left button decreased the setpoint. When the setpoint was greater than the temperature, the LED would turn on. When the setpoint was less than or equal to the temperature, the LED would turn off. The LED function served as a heat indicator. 
 
